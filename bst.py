@@ -71,6 +71,7 @@ def height(root):
     else:
         left_height = height(root.left)
         right_height = height(root.right)
+    print(left_height,right_height)
     return 1+max(left_height,right_height)
 
 def exists_in_tree(root,val):
@@ -106,7 +107,7 @@ if __name__ == '__main__':
     # print(tree_sum(numbers_tree))
 
     # print(maximum(numbers_tree))
-    # print(height(numbers_tree))
+    print(height(numbers_tree))
     # print(exists_in_tree(numbers_tree,4))
-    reverse_tree(numbers_tree)
-    print(numbers_tree.in_order_traversal())
+    # reverse_tree(numbers_tree)
+    # print(numbers_tree.in_order_traversal())
